@@ -21,6 +21,6 @@ jobs:
       - name: Setup ESLint
         run: |
           npm install --save-dev @babel/core@7.x @babel/eslint-parser@7.x @vue/cli-plugin-babel@5.x @vue/cli-plugin-eslint@5.x @vue/cli-service@5.x @vue/eslint-config-airbnb@6.x eslint@7.x eslint-plugin-import@2.x eslint-plugin-vue@8.x eslint-plugin-vuejs-accessibility@1.x
-          [ -f .eslintrc.js ] || wget https://raw.githubusercontent.com/olawale-o/linters_config/main/vue-pinia/.eslintrc.js
+          [ -f .eslintrc.js ] || wget https://raw.githubusercontent.com/olawale-o/linters_config/main/vue-pinia/.eslintrc.json
       - name: ESLint Report
         run: npm run lint
